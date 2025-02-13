@@ -3,11 +3,13 @@ document.getElementById("conversionForm").addEventListener("submit", function(ev
     
     let valor = document.getElementById("valor").value;
     let conversion = document.getElementById("conversion").value;
-    let resultadoTexto = document.getElementById("resultado");
-
+    
     if (valor === "" || isNaN(valor) || valor <= 0) {
-        alert("Error: Ingrese un número válido mayor a 0");
-        resultadoTexto.innerText = "";
+        Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: "Ingrese un número válido mayor a 0",
+        });
         return;
     }
 
@@ -29,5 +31,9 @@ document.getElementById("conversionForm").addEventListener("submit", function(ev
             resultado = "Conversión no válida";
     }
 
-    resultadoTexto.innerText = resultado;
+    Swal.fire({
+        icon: "success",
+        title: "Conversión Exitosa",
+        text: resultado,
+    });
 });
