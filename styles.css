@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-    color: #007bff;
+    color: olive;
 }
 
 .btn-primary {
@@ -26,3 +26,20 @@ h2 {
 .is-invalid {
     border-color: #dc3545; /* Red border for invalid input */
 }
+
+.btn-primary {
+    background-color: #28a745; /* Verde */
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+.btn-primary:active {
+    background-color: #1e7e34; /* Verde más oscuro al hacer clic */
+}
+
+#resultado {
+    background-color: rgb(201, 230, 201);
+    color: black;
+  }
