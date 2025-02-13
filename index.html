@@ -19,17 +19,20 @@
                     <option value="m-cm">Metros a Centímetros</option>
                     <option value="ft-in">Pies a Pulgadas</option>
                     <option value="yard-in">Yardas a Pulgadas</option>
-                </select>
+                    </select>
             </div>
             <div class="mb-3">
                 <label for="valor" class="form-label">Ingresa el valor:</label>
                 <input type="number" id="valor" class="form-control" placeholder="Ingrese un número" required>
+                <div class="invalid-feedback">
+                    Por favor, ingrese un número válido mayor a 0.
+                </div>
             </div>
             <button type="submit" class="btn btn-primary">Convertir</button>
         </form>
         <div class="mt-4 alert alert-info" id="resultado"></div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
